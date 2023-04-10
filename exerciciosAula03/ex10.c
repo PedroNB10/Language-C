@@ -9,5 +9,5 @@ int main ()
     scanf("%f",&tempFah);
     tempCelsius = (tempFah - 32)/(1.8);
     printf("Temperatura em Celsius: %f \n",tempCelsius);
-
+    return 0;
 }
