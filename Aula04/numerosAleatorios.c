@@ -1,6 +1,6 @@
 #include <stdio.h>
-#include <time.h>
-#include <stdlib.h>
+#include <time.h> // biblioteca para pegar o tempo atual
+#include <stdlib.h> // biblioteca para usar rand() e srand()
 
 int main () 
 {
