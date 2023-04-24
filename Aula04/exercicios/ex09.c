@@ -11,7 +11,7 @@ int main ()
     printf("Digite a carga horaria total:");
     scanf("%d",&carga);
 
-    porcentagem = (float) faltas / carga *100;
+    porcentagem = faltas *100.0 / carga;
 
     printf("Porcetagem de faltas: %.f%%\n ",porcentagem);
     return 0;
