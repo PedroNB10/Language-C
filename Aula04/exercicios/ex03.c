@@ -4,7 +4,6 @@
 int main ()
 {
     float peso;
-    int pesoInt;
     int gotas;
 
     printf("Digite o seu peso:");

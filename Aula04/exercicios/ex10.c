@@ -9,6 +9,8 @@ int main ()
     printf("Digite a quantidade de pecas a serem produzidas: ");
     scanf("%d",&pecas);
     segundos = pecas * 17;
+
+    
     min = segundos /60;
     min = (int) min;
     segundos = (segundos % 60);
