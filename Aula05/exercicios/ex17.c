@@ -8,7 +8,7 @@ int main ()
     printf("Digite a altura, largura e profundidade respectivamente:\n");
     scanf("%f%f%f",&altura,&largura,&profundidade);
 
-    if( diametro <= largura && diametro <= profundidade && diametro <= altura){
+    if( diametro < largura && diametro < profundidade && diametro < altura){
         printf("sim \n");
     }
     else{
