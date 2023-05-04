@@ -2,14 +2,14 @@
 
 int main ()
 {
-    int n;
+    int n,i;
 
     do{
     printf("Digite um número inteiro positivo N:");
     scanf("%d",&n);
     }while(n < 0);
 
-    for (int i = 0; n >= i; i ++ )
+    for (i = 0; n >= i; i ++ )
 
     printf("%d ",i);
 

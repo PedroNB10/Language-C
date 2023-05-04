@@ -2,20 +2,20 @@
 
 int main ()
 {
-    int n;
+    int n,i;
 
     printf("Digite um número inteiro positivo N:");
     scanf("%d",&n);
 
     if(n >= 1){
-        for(int i = n; i >= 1; i--){
+        for(i = n; i >= 1; i--){
             
                 printf("%d ",i);
             }
     }
 
     else{
-            for(int i = 1; i >= n; i--){
+            for(i = 1; i >= n; i--){
                 printf("%d ",i);
             }
     }
