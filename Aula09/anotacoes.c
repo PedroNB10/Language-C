@@ -43,7 +43,7 @@ int main () {
 //tolower
 //toupper    
 
-//string.h
+//string.h para funções a seguir:
 //strlen
 //strcmp
 //strcpy
