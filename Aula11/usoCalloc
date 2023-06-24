@@ -1,0 +1,7 @@
+#include <stdio.h>
+
+int main (){
+    void*calloc(num,tam); // a diferenca é que calloc zera os numeros, por isso é mais lenta q malloc
+
+    return 0;
+}
