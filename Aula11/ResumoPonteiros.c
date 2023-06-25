@@ -22,6 +22,9 @@ int main (){
     ponteiro2 = &variavelNormal;//ponteiro apontando para uma variavel
     ponteiro = &a;//ponteiro apontando para outro ponteiro
 
+    //para apontar para um vetor não é preciso do "e" comercial(&)
+    //ponteiro = vetor;
+
     exemplo2 = &a;
 
     exemplo = &b;
