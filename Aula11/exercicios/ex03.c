@@ -4,9 +4,9 @@
 
 int main ()
 {   
-    int a = 3 ,  *point01;
-    float b = 2.5, *point02;
-    char c =  'X',  *point03;
+    int a = 3 ,  *point01 = NULL;
+    float b = 2.5, *point02 = NULL;
+    char c =  'X',  *point03 = NULL;
     printf("Valores antes da modificação:\n");
     printf("a: %d, b: %f c: %c\n",a,b,c);
 
@@ -25,6 +25,7 @@ int main ()
     printf("Valores depois da modificação:\n");
     printf("a: %d, b: %f c: %c\n",a,b,c);
 
+    
 
     return 0;
 }

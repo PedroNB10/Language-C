@@ -4,7 +4,7 @@
 
 int main ()
 {
-    int vet[TAM], i, *point,soma;
+    int vet[TAM], i, *point = NULL,soma;
 
     point = vet;
 

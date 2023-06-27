@@ -7,11 +7,12 @@
 #define TAM 80
 int main ()
 {
-    char *frase = NULL, *fraseInvertida = NULL;
+    char *frase = (char *) malloc(80 * sizeof(char)),
+         *fraseInvertida = (char *) malloc(80 * sizeof(char));
+
     int i = 0,j;
 
-    frase = (char *) malloc(80 * sizeof(char));
-    fraseInvertida = (char *) malloc(80 * sizeof(char));
+
     scanf(" %[^\n]", frase);
     j = 0;
 
@@ -41,8 +42,9 @@ int main ()
     printf("\n");
 
 
-    free(frase);
+  
     free(fraseInvertida);
+    free(frase);
    
     return 0;
 }

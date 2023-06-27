@@ -2,7 +2,7 @@
 
 int main ()
 {
-    int vet[10],i, *point;
+    int vet[10],i, *point = NULL;
 
     point = vet;
 
@@ -16,7 +16,7 @@ int main ()
         printf("Endereco de %d : %p\n", *(point + i),point + i);
     }
 
-
+    
 
     return 0;
 }
