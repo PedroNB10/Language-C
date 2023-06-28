@@ -43,6 +43,6 @@ int main()
     printf("media: %.2lf\n", media);
     free(vet);
     free(indiceNumProxMedia);
-
+    free(precisao);
     return 0;
 }
