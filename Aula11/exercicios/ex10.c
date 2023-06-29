@@ -3,46 +3,34 @@
 #include <math.h>
 int main()
 {
-    int N, i, contador = 0;
-    int *indiceNumProxMedia = (int *)malloc(sizeof(int));
+    int N, i, contador = 0, idx;
     scanf(" %d", &N);
-    double *precisao = (double *)malloc((N) * sizeof(double)), menorVariacao = INFINITY;
+    int *indiceNumProxMedia = &idx;
+    double menorVariacao;
+    double vet[N], *ponteiroArray = vet;
+    double soma = 0, media, precisao;
 
-  
-    double *vet = (double *)malloc((N) * sizeof(double));
-    double soma = 0, media;
- 
+    ponteiroArray = vet;
+    indiceNumProxMedia = &idx;
 
     for (i = 0; i < N; i++)
     {
-        scanf(" %lf", &vet[i]);
+        scanf("%lf", (ponteiroArray + i)); // é a mesma coisa que vet[i]
         soma = soma + (vet[i]);
     }
     media = soma / N;
-
-    if (media == 0)
+    menorVariacao =  fabs(vet[0] - media);
+    for (i = 0; i < N; i++)
     {
-        *indiceNumProxMedia = 0;
-    }
-    else
-    {
-
-        for (i = 0; i < N; i++)
+        precisao = fabs(vet[i] - media);
+        if (precisao < menorVariacao)
         {
-
-            precisao[i] = fabs(vet[i] - media);
-            if (precisao[i] < menorVariacao)
-            {
-                menorVariacao = precisao[i];
-                *indiceNumProxMedia = i;
-            }
+            menorVariacao = precisao;
+            *indiceNumProxMedia = i;
         }
     }
 
-    printf("Valor mais próximo da média: %.2lf posição: vet[%d]\n", vet[*indiceNumProxMedia], *indiceNumProxMedia);
+    printf("Valor mais próximo da média: %.2lf posição: vet[%d]\n", vet[idx], idx);
     printf("media: %.2lf\n", media);
-    free(vet);
-    free(indiceNumProxMedia);
-    free(precisao);
     return 0;
 }
