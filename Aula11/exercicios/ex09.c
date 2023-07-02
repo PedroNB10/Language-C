@@ -5,24 +5,7 @@
 
 #define TAM 5
 
-void bubbleSort(int *vetor)
-{
-    int i,j,temporary;
-    for(i = 0; i < TAM; i++)
-    {
-        for(j = 0; j < (TAM - i - 1); j++)
-        {
-            if(*(vetor + j) > *(vetor + j + 1)){
-                temporary = *(vetor + j);
-                *(vetor + j) = *(vetor + j + 1);
-                *(vetor + j + 1) = temporary;
-            }
-
-        }
-    }
-
-
-}   
+void bubbleSort(int *vetor); // protótipo de função
 
 int main ()
 {   
@@ -52,3 +35,21 @@ int main ()
 
     return 0;
 }
+
+void bubbleSort(int *vetor)
+{
+    int i,j,temporary;
+    for(i = 0; i < TAM; i++)
+    {
+        for(j = 0; j < (TAM - i - 1); j++)
+        {
+            if(*(vetor + j) > *(vetor + j + 1)){
+                temporary = *(vetor + j);
+                *(vetor + j) = *(vetor + j + 1);
+                *(vetor + j + 1) = temporary;
+            }
+
+        }
+    }
+
+}   
