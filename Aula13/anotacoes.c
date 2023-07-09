@@ -3,7 +3,7 @@
 int main ()
 {
     //fopen(nome,modoDeAbertura) abrir um arquivo, caso o arquivo não exista o arquivo é criado
-    //fclose() utilizada para fechar um arquivo
+    //fclose() utilizada para fechar um arquivo, no momento que é fechado é o momento que que salva o arquivo
     //fprintf() utilizada para escrever dentro de um arquivo de texto
     //fscanf() utilizada para ler o conteúdo de um arquivo de texto
 

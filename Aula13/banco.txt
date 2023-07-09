@@ -1,2 +1,0 @@
-10	Pedro Henrique	2000000.000000
-20	Matheus Anthony	38.000000
