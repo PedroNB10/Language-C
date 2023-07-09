@@ -15,6 +15,7 @@ int main ()
 long long int fatorial(int x){
     
     long long int resultado = 1;
+
     int i;
 
     for(i = 1; i <= x; i++){
@@ -26,15 +27,15 @@ long long int fatorial(int x){
 
 double serie(int n){
 
-    int i, j = 1; 
+    int i, j = 0; 
     double soma = 0;
 
 
     for(i = 0; i < n; i++)
     {
-        soma = soma + ((double) i / (double) fatorial(j));
-        j++;
-        
+        soma = soma + ((double) i / fatorial(j));
+        j = j+ 2;
+
     }
 
     return soma;

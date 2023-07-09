@@ -1,37 +1,34 @@
 #include <stdio.h>
 #include <ctype.h>
 
-void avarage(double n1, double n2, double n3, char averageType, double *finalAvarage);
+float avarageA(float n1, float n2, float n3);
+
+float avarageP(float n1, float n2, float n3);
 
 int main()
 {
 
-    double n1,n2,n3;
+    float n1,n2,n3;
     char symbol;
-    double finalAvarege;
-    scanf(" %lf %lf %lf %c", &n1, &n2, &n3, &symbol);
+    float finalAvarege;
+    scanf(" %f %f %f %c", &n1, &n2, &n3, &symbol);
     
-    avarage(n1,n2,n3,symbol,&finalAvarege);
 
-    printf("%.2lf\n",finalAvarege);
+    if(symbol == 'A') finalAvarege = avarageA(n1,n2,n3);
+    
+    if(symbol == 'P') finalAvarege = avarageP(n1,n2,n3);
+
+    printf("%.2f\n",finalAvarege);
 
     return 0;
 }
 
-void avarage(double n1, double n2, double n3, char averageType,double *finalAvarage)
+float avarageA(float n1, float n2, float n3)
 {
-
-
-    if(toupper(averageType) == 'A')
-    {
-        *finalAvarage =  (n1 + n2 + n3) / 3;
-    } 
-
-
-
-    if(toupper(averageType) == 'P')
-    {
-         *finalAvarage =   (n1 * 5 + n2 * 2 + n3 * 3)/10;
-    }
-
+        return (n1 + n2 + n3) / 3.0;
 }
+
+float avarageP(float n1, float n2, float n3){
+        return (n1*5 + n2*3 + n3*2) / 10.0;
+}
+
