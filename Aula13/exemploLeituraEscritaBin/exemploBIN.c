@@ -33,13 +33,24 @@ int main ()
 
     //leitura
     arq = fopen("alunos.bin","rb");
-
+    // i * sizeof(aluno) é o registro (posição)
     // 0 é o primeiro registro
     // 1 é o segundo registro
-    fseek(arq, 0* sizeof(aluno),SEEK_SET);
+   int i = 0;
+        fseek(arq, i* sizeof(aluno),SEEK_SET);
+        fread(&a,sizeof(aluno),1,arq);
+ 
+    while(!feof(arq)){
+       
+        printf("Aluno: %s (%d)\n", a.nome, a.matricula);
+        i++;
+        fseek(arq, i* sizeof(aluno),SEEK_SET);
+        fread(&a,sizeof(aluno),1,arq);
+        
+   
+    }
 
-    fread(&a,sizeof(aluno),1,arq);
-    printf("Aluno: %s (%d)\n", a.nome, a.matricula);
+
     fclose(arq);
 
 
