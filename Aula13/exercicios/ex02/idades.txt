@@ -1,0 +1,3 @@
+Nome:Pedro Nogueira	Idade:19
+Nome:Amanda Barboza	Idade:18
+Nome:Raimundo Almeida	Idade:47

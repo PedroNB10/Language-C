@@ -1,3 +1,3 @@
-1000    santa rita do sapucao
-7000    itajuba de silva
-3000    sao paulo
+1000    santa rita do sapucai
+7000    itajuba
+1230000    sao paulo
