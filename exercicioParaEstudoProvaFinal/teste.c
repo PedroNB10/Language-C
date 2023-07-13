@@ -114,7 +114,7 @@ void sortByAlphabet(dataStudents * students, int N){
     int i,j,temporaryAge;
     char temporaryName[80];
 
-    for(i = 0; i < N; i++){
+    for(i = 0; i < N -1; i++){
         for(j = 0; j < N -i -1; j++)
         {
             if(strcmp(students[j].name,students[j + 1].name) > 0){
