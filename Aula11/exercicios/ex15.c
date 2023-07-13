@@ -6,7 +6,7 @@ int main()
 {
     int linhas;
     int colunas;
-    int i, j;
+    int i, j,numero,vezes = 0;
 
     printf("Digite o número de linhas: ");
     scanf("%d", &linhas);
@@ -30,6 +30,9 @@ int main()
         }
     }
 
+    printf("Digite qualquer valor de 0 a 10:");
+    scanf(" %d", &numero);
+
     // Imprimir a matriz
     printf("Matriz gerada:\n");
     for (i = 0; i < linhas; i++)
@@ -40,6 +43,30 @@ int main()
         }
         printf("\n");
     }
+
+    for (i = 0; i < linhas; i++)
+    {
+        for (j = 0; j < colunas; j++)
+        {
+            if(matriz[i][j] == numero){
+                vezes++;
+                break;
+            }
+        }
+      
+    }
+
+    if(vezes > 0){
+        printf("O número %d está presente %d vezes na matriz\n",numero,vezes);
+    }
+    else{
+        printf("O número %d não está contido na matriz\n",numero);
+    }
+
+
+
+
+
 
     free(matriz[0]);
     free(matriz);
