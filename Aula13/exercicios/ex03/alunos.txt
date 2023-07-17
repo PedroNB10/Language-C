@@ -1,0 +1,3 @@
+Nome:pedro nogueira	Nota:10.00
+Nome:amanda barboza	Nota:9.00
+Nome:bela	Nota:8.00
